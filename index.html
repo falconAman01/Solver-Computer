@@ -5,56 +5,120 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Solver Computer Center</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="css/style.css" />
     </head>
 
     <body>
         <header>
             <nav>
-                <a href="">About</a>
-                <a href=""></a>
+                <a href="#about" class="nav_button">About</a>
+                <a href="#course" class="nav_button">Courses</a>
+                <a href="#contact" class="nav_button">Contacts</a>
+                <a href="#teacher" class="nav_button">Teachers</a>
+                <a href="#image" class="nav_button">Gallary</a>
             </nav>
-            <h1>Solver Computer Center</h1>
+            <h1 id="main_heading">Solver Computer Center</h1>
         </header>
         <main>
             <section id="about">
-                <h2>About</h2>
-                <p>
-                    Welcome to the Solver Computer Center, it was built in 2000,
-                    this educational institution is at your doorstep, its head
-                    teacher and creator is Mr. Tanmoy Roy He is basically a
-                    hardware programmer expert, here is a good computer
-                    education system for all types of students.
-                </p>
+                <div class="group">
+                    <h2 class="section_heading">About</h2>
+                    <p class="about_phra">
+                        Welcome to the Solver Computer Center, it was built in
+                        2000, this educational institution is at your doorstep,
+                        its head teacher and creator is Mr. Tanmoy Roy He is
+                        basically a hardware programmer expert, here is a good
+                        computer education system for all types of students.
+                    </p>
+                </div>
             </section>
-            <section>
-                <h2>Cources</h2>
-                <button class="cource_botton">
-                    ADCA
-                    <span class="arrow">▼</span>
-                </button>
+            <p class="section_break">...</p>
+            <section id="course">
+                <div class="group">
+                    <h2 class="section_heading">Courses</h2>
+                    <button class="course_botton">
+                        ADCA
+                        <span class="arrow">▼</span>
+                    </button>
+                    <div class="course_details">
+                        <p>
+                            ADCA stands for Advanced Diploma in Computer
+                            Applications. It is a one-year, job-oriented diploma
+                            course designed to provide comprehensive training in
+                            computer applications, including MS Office(Word,
+                            Powerpoint, Excel, Access), HTML, and internet
+                            applications.
+                        </p>
 
-                <div class="cource_details">
-                    <p>1</p>
+                        <hr />
+                        <p>
+                            <strong
+                                >Curriculum that includes hands-on projects
+                            </strong>
+                        </p>
+                        <ul>
+                            <li>Introduction with Windows 10,7</li>
+                            <li>Computer personalizing</li>
+                            <li>Paint</li>
+                            <li>Wordpad</li>
+                            <li>Notepad</li>
+                            <li>Ms Word</li>
+                            <li>Ms Excel</li>
+                            <li>Ms Powerpoint</li>
+                            <li>Ms Access</li>
+                            <li>Html 5</li>
+                            <li>Basic Hardware & Networking</li>
+                        </ul>
+                    </div>
+                    <button class="course_botton">
+                        School course
+                        <span class="arrow">▼</span>
+                    </button>
+
+                    <div class="course_details">
+                        <p>1</p>
+                    </div>
+                    <button class="course_botton">
+                        Web Desing
+                        <span class="arrow">▼</span>
+                    </button>
+
+                    <div class="course_details">
+                        <p>1</p>
+                    </div>
                 </div>
-                <button class="cource_botton">
-                    School Cource
-                    <span class="arrow">▼</span>
-                </button>
-
-                <div class="cource_details">
-                    <p>1</p>
-                </div>
-                <button class="cource_botton">
-                    Web Desing
-                    <span class="arrow">▼</span>
-                </button>
-
-                <div class="cource_details">
-                    <p>1</p>
-                </div>
-
             </section>
+            <p class="section_break">...</p>
+            <section id="contact">
+                <div class="group">
+                    <h2 class="section_heading">Contact</h2>
+                </div>
+            </section>
+            <p class="section_break">...</p>
+            <section id="teacher">
+                <div class="group">
+                    <h2 class="section_heading">Teachers</h2>
+                </div>
+            </section>
+            <p class="section_break">...</p>
+            <section id="image">
+                <div class="group">
+                    <h2 class="section_heading">Gallary</h2>
+                    <img
+                        class="images"
+                        src="image/img1.jpg"
+                        alt=""
+                        width="96%"
+                    />
+                </div>
+            </section>
+            <p class="section_break">...</p>
         </main>
         <script src="js/script.js"></script>
     </body>
