@@ -16,32 +16,57 @@
 
 <body>
     <header>
-        <nav>
-            <a href="#about" class="nav_button">About</a>
-            <a href="#course" class="nav_button">Courses</a>
-            <a href="#contact" class="nav_button">Contacts</a>
-            <a href="#teacher" class="nav_button">Teachers</a>
-            <a href="#image" class="nav_button">Gallery</a>
+        <nav class="navbar">
+            <a href="#about" class="nav_button"><span class="nav_icon">📋</span>About</a>
+            <a href="#course" class="nav_button"><span class="nav_icon">📚</span>Courses</a>
+            <a href="#contact" class="nav_button"><span class="nav_icon">📞</span>Contacts</a>
+            <a href="#teacher" class="nav_button"><span class="nav_icon">👨‍🏫</span>Teachers</a>
+            <a href="#image" class="nav_button"><span class="nav_icon">🖼️</span>Gallery</a>
         </nav>
-        <h1 id="main_heading">Solver Computer Center</h1>
+        <div class="header-content">
+            <div class="header-icon">💻</div>
+            <h1 id="main_heading">Solver Computer Center</h1>
+            <p class="tagline">Excellence in Computer Education Since 2000</p>
+            <p class="tagline-sub">Your Gateway to Tech Excellence</p>
+        </div>
     </header>
     <main>
         <section id="about">
             <div class="group">
-                <h2 class="section_heading">About</h2>
-                <p class="about_phra">
-                    Welcome to the Solver Computer Center, it was built in
-                    2000, this educational institution is at your doorstep,
-                    its head teacher and creator is Mr. Tanmoy Roy He is
-                    basically a hardware programmer expert, here is a good
-                    computer education system for all types of students.
-                </p>
+                <h2 class="section_heading">
+                    <span class="section_icon">ℹ️</span> About Us
+                </h2>
+                <div class="about_card">
+                    <p class="about_phra">
+                        Welcome to the Solver Computer Center, it was built in
+                        2000, this educational institution is at your doorstep,
+                        its head teacher and creator is Mr. Tanmoy Roy He is
+                        basically a hardware programmer expert, here is a good
+                        computer education system for all types of students.
+                    </p>
+                    <div class="about_highlights">
+                        <div class="highlight">
+                            <span class="highlight_icon">🎯</span>
+                            <span>Expert Instructors</span>
+                        </div>
+                        <div class="highlight">
+                            <span class="highlight_icon">💾</span>
+                            <span>Hands-on Training</span>
+                        </div>
+                        <div class="highlight">
+                            <span class="highlight_icon">🏆</span>
+                            <span>Certified Courses</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <p class="section_break">...</p>
         <section id="course">
             <div class="group">
-                <h2 class="section_heading">Courses</h2>
+                <h2 class="section_heading">
+                    <span class="section_icon">📚</span> Our Courses
+                </h2>
                 <button class="course_botton">
                     ADCA
                     <span class="arrow">▼</span>
@@ -58,8 +83,9 @@
 
                     <hr />
                     <p>
-                        <strong>Curriculum that includes hands-on projects
+                        <strong>🎓 Curriculum that includes hands-on projects
                         </strong>
+
                     </p>
                     <ul>
                         <li>Introduction with Windows 10,7</li>
@@ -92,13 +118,15 @@
                     <p><strong>🎓 What is a Photoshop Course?</strong></p>
                     <hr>
                     <ul>
-                        A Photoshop course teaches you how to use Adobe Photoshop for:
+                        <u><strong>A Photoshop course teaches you how to use Adobe Photoshop for: <br> <br> <br>
+                            </strong></u>
+
                         <li>Image editing and manipulation</li>
                         <li>Photo editing & retouching</li>
                         <li>Graphic design (posters, banners, logos)</li>
                         <li>Social media content creation</li>
                         <li>Digital art & web design</li>
-                    
+
                     </ul>
                     <p>📚 Course Syllabus (What you learn)</p>
                     <ol>
@@ -131,28 +159,98 @@
                                 <li>Portfolio creation</li>
                             </ul>
                         </li>
-
                     </ol>
                 </div>
+
+                <button class="course_botton">
+                    Computer Application class 10th to 12th
+                    <span class="arrow">▼</span>
+                </button>
+
+                <div class="course_details">
+                    <p>1</p>
+                </div>
+                <button class="course_botton">
+                    Programming
+                    <span class="arrow">▼</span>
+                </button>
+
+                <div class="course_details">
+                    <p></p>
+                </div>
             </div>
+
         </section>
         <p class="section_break">...</p>
         <section id="contact">
             <div class="group">
-                <h2 class="section_heading">Contact</h2>
+                <h2 class="section_heading">
+                    <span class="section_icon">📞</span> Get in Touch
+                </h2>
+                <div class="contact_details">
+                    <div class="contact_item">
+                        <span class="contact_icon">📍</span>
+                        <div>
+                            <strong>Address:</strong>
+                            <a href="https://maps.app.goo.gl/W7oep76PR2Eatb5Y7" target="_blank"
+                                class="address_link">Sarmastapur, Chakdaha, Nadia</a>
+                        </div>
+                    </div>
+                    <div class="contact_item">
+                        <span class="contact_icon">📱</span>
+                        <div>
+                            <strong>Phone:</strong>
+                            <a href="tel:+919932534177" class="phone_link">+91 99325 34177</a>
+                        </div>
+                    </div>
+                    <div class="contact_item">
+                        <span class="contact_icon">✉️</span>
+                        <div>
+                            <strong>Email:</strong>
+                            <a href="mailto:tanmoyroy72@gmail.com" class="email_link">tanmoyroy72@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <p class="section_break">...</p>
         <section id="teacher">
             <div class="group">
-                <h2 class="section_heading">Teachers</h2>
+                <h2 class="section_heading">
+                    <span class="section_icon">👨‍🏫</span> Our Teachers
+                </h2>
+                <div class="teachers_grid">
+                    <div class="teacher_card">
+                        <div class="teacher_image_wrapper">
+                            <img src="image/teacher1.jpg" alt="Tanmoy Roy" class="teacher_image" />
+                            <div class="teacher_badge">Owner</div>
+                        </div>
+                        <h3 class="teacher_name">Tanmoy Roy</h3>
+                        <p class="teacher_subject">Hardware Specialist</p>
+                        <p class="teacher_bio">Expert in hardware programming and computer architecture</p>
+                    </div>
+                    <div class="teacher_card">
+                        <div class="teacher_image_wrapper">
+                            <img src="image/teacher2.jpg" alt="Web Designer" class="teacher_image" />
+                            <div class="teacher_badge">Instructor</div>
+                        </div>
+                        <h3 class="teacher_name">Web Design Expert</h3>
+                        <p class="teacher_subject">Web Designer</p>
+                        <p class="teacher_bio">Specialized in modern web design and development</p>
+                    </div>
+                </div>
             </div>
+
         </section>
         <p class="section_break">...</p>
         <section id="image">
             <div class="group">
-                <h2 class="section_heading">Gallery</h2>
-                <img class="images" src="image/img1.jpg" alt="" width="96%" />
+                <h2 class="section_heading">
+                    <span class="section_icon">🖼️</span> Gallery
+                </h2>
+                <div class="gallery_wrapper">
+                    <img class="images" src="image/img1.jpg" alt="Gallery" />
+                </div>
             </div>
         </section>
         <p class="section_break">...</p>
