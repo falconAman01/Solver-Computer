@@ -2,9 +2,7 @@
 const acc = document.querySelectorAll(".course_botton");
 
 acc.forEach(btn => {
-    btn.addEventListener("click", function (e) {
-        e.preventDefault();
-
+    btn.addEventListener("click", function () {
         // Toggle active class
         this.classList.toggle("active");
 
@@ -75,13 +73,16 @@ function revealOnScroll() {
 // Smooth scroll for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
+        // Only prevent default for hash links, not for external links
+        if (this.getAttribute('href').startsWith('#')) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
         }
     });
 });
