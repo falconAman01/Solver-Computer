@@ -682,6 +682,7 @@ section:hover .section_heading::before {
     color: var(--text-dark);
     margin-bottom: 0.5rem;
     letter-spacing: -0.3px;
+    padding: 20px;
 }
 
 .teacher_subject {
@@ -689,12 +690,14 @@ section:hover .section_heading::before {
     font-weight: 600;
     margin-bottom: 1rem;
     font-size: 0.95rem;
+    padding: 20px;
 }
 
 .teacher_bio {
     color: var(--text-gray);
     font-size: 0.95rem;
     line-height: 1.7;
+    padding: 15px 20px;
 }
 
 /* ==================== Gallery Section ==================== */
