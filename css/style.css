@@ -541,6 +541,7 @@ section:hover .section_heading::before {
     align-items: center;
     text-align: center;
     box-shadow: var(--shadow-sm);
+    cursor: pointer;
 }
 
 .contact_item:hover {
@@ -643,8 +644,10 @@ section:hover .section_heading::before {
 .teacher_image_wrapper {
     position: relative;
     overflow: hidden;
-    height: 280px;
+    height: 600px;
+    width: 100%;
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+    padding: 70px 20px 20px;
 }
 
 .teacher_image {

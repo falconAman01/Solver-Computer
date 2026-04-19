@@ -117,6 +117,19 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// Make contact items clickable
+document.addEventListener('DOMContentLoaded', function () {
+    const contactItems = document.querySelectorAll('.contact_item');
+    contactItems.forEach(item => {
+        item.addEventListener('click', function () {
+            const link = this.querySelector('a');
+            if (link) {
+                link.click();
+            }
+        });
+    });
+});
+
 // Initialize animations on page load
 document.addEventListener("DOMContentLoaded", function () {
     revealOnScroll();
