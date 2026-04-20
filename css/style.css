@@ -213,6 +213,52 @@ header::after {
     font-weight: 400;
 }
 
+/* Owner Photo Section */
+.owner-photo-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    animation: fadeIn 1s ease-out 0.7s forwards;
+    opacity: 0;
+    flex-wrap: wrap;
+}
+
+.owner-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.owner-photo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.owner-info {
+    color: white;
+}
+
+.owner-name {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    margin: 0;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.owner-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0.3rem 0 0 0;
+}
+
 @keyframes fadeInScale {
     from {
         opacity: 0;
@@ -655,6 +701,7 @@ section:hover .section_heading::before {
     height: 100%;
     object-fit: cover;
     transition: transform 0.5s ease;
+    border-radius: 12px;
 }
 
 .teacher_card:hover .teacher_image {
@@ -960,10 +1007,4 @@ section:hover .section_heading::before {
     .nav_button {
         display: none;
     }
-}
-
-gap: 8px;
-margin-top: 10px;
-margin-left: 20px;
-margin-right: 20px;
 }
