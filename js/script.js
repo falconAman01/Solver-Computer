@@ -154,3 +154,31 @@ if (document.readyState === 'loading') {
     document.body.style.opacity = "1";
 }
 
+// Gallery Carousel Function
+let currentSlide = 0;
+const itemsPerView = 3;
+
+function slideGallery(direction) {
+    const track = document.getElementById('carouselTrack');
+    const items = document.querySelectorAll('.gallery_item');
+    const totalItems = items.length;
+
+    // Calculate new slide position
+    currentSlide += direction;
+
+    // Prevent sliding beyond limits
+    if (currentSlide > totalItems - itemsPerView) {
+        currentSlide = 0;
+    } else if (currentSlide < 0) {
+        currentSlide = totalItems - itemsPerView;
+    }
+
+    // Calculate the translation distance
+    const itemWidth = 100 / itemsPerView;
+    const gapWidth = (1.5 / (items[0].offsetParent?.offsetWidth || 1)) * 100;
+    const offset = currentSlide * (itemWidth + gapWidth / itemsPerView);
+
+    // Apply transformation
+    track.style.transform = `translateX(-${offset}%)`;
+}
+
